@@ -1,0 +1,166 @@
+* {
+  font-family: sans-serif;
+}
+
+html {
+  background-image: url(../images/bats.gif);
+}
+
+body {
+  width: 800px;
+  background-color: white;
+  border: 5px solid black;
+  box-shadow: 6px 5px 10px black, -5px 5px 10px black;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  border-bottom: 3px solid black;
+  background-image: linear-gradient(45deg, white, orange 75%, black);
+}
+
+header>img {
+  float: left;
+  margin: 0 20px 0 7px;
+  padding-top: 7px;
+}
+
+header>h2 {
+  padding-top: 13px;
+  margin: 0;
+  font-size: 250%;
+}
+
+header>h3 {
+  margin: 0 0 10px 0;
+}
+
+footer {
+  clear: both;
+  border-top: 3px solid black;
+  background-image: linear-gradient(45deg, black, orange 25%, white);
+}
+
+footer>p {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: orange;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  padding: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px 0px;
+  width: 160px;
+}
+
+.navbar>a:first-child {
+  color: orange;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 0px;
+  background-color: black;
+  margin: 0;
+  width: 160px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+.dropdownmenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: black;
+}
+
+.dropdownmenu:hover li {
+  background-color: gray;
+}
+
+.dropdown:hover .dropdownmenu {
+  display: block;
+}
+
+.left {
+  float: left;
+  width: 160px;
+}
+
+.left ul {
+  margin: 20px 0 10px 0;
+  padding-left: 20px;
+}
+
+.left li {
+  background-color: orange;
+  border: 2px solid black;
+  margin: 2px;
+  float: left;
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.left a {
+  color: black;
+}
+
+.right {
+  float: left;
+  width: 600px
+}
+
+.right h1 {
+  font-size: 200%;
+  margin-top: 5px;
+}
+
+.right h1::first-letter {
+  font-size: 150%;
+}
+
+.right h2 {
+  margin-top: 5px;
+}
+
+.right p {
+  margin-top: 10px;
+}
