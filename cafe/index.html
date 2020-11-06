@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="function.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul> 
+            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso" onmouseover="this.src='images/espresso_info.jpg'" onmouseout="this.src='images/espresso.jpg'" onclick="ClickToOrder('espresso')"/></a></li>
+            		<li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte" onmouseover="this.src='images/latte_info.jpg'" onmouseout="this.src='images/latte.jpg'" onclick="ClickToOrder('latte')"/></a></li>
+            		<li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino" onmouseover="this.src='images/cappuccino_info.jpg'" onmouseout="this.src='images/cappuccino.jpg'" onclick="ClickToOrder('cappuccino')"/></a></li>
+            		<li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee" onmouseover="this.src='images/coffee_info.jpg'" onmouseout="this.src='images/coffee.jpg'" onclick="ClickToOrder('coffee')"/></a></li>
+            		<li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti" onmouseover="this.src='images/biscotti_info.jpg'" onmouseout="this.src='images/biscotti.jpg'" onclick="ClickToOrder('biscotti')"/></a></li>
+            		<li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone" onmouseover="this.src='images/scone_info.jpg'" onmouseout="this.src='images/scone.jpg'" onclick="ClickToOrder('scone')"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6" >
+            		</select>
+            		<p id="total">&nbsp;</p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="button" name="place_order" id="place_order" value="Place Order">
+           			<input type="button" name="clear_order" id="clear_order" value="Clear Order">				            		
+            	</section>
+            </section>   
+
+
+
+        </form>
+    </main> 
+</body>
+</html>
